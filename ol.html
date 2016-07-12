@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+		img{
+			display: block;
+			width: 100%;
+			height: auto;
+		}
+		h2{
+			margin: 0;
+			padding: 0;
+		}
+		.wine-bottle{
+			position: relative;
+			width: 800px;
+			margin: 0 auto;
+		}
+		.wine-bottle-ribbon{
+			position: absolute;
+			top:300px;
+			left: 315px;
+			width: 185px;
+			background: #E77471;
+		}
+		.wine-bottle-ribbon h2{
+			padding: 9px 8px 8px 8px;
+			font-family: 'Great Vibes', cursive;
+			text-align: center;
+			color: #FFF;
+			text-shadow: 1px 3px 2px rgba(0, 0, 0, .5);
+		}
+		.wine-bottle-ribbon:before, .wine-bottle-ribbon:after{
+			content:"";
+			position: absolute;
+            display:block;
+            z-index:-2;
+            top:21px;
+            border: 20px solid #C24641;
+		}
+		.wine-bottle-ribbon:before{
+			left:-70px;
+			border-left-color: transparent;
+			border-right-width: 90px;
+		}
+		.wine-bottle-ribbon:after{
+			right:-70px;
+			border-right-color: transparent;
+			border-left-width: 90px;
+		}
+		.wine-bottle-ribbon-content:before{
+			content: "";
+			position: absolute;
+			display: block;
+			height: 0;
+			width: 0;
+			top:47px;
+			left:0;
+			border-width: 12px 17px;
+			border-style: solid;
+			border-color: #8C001A #8C001A transparent transparent;
+			z-index: -1;
+		}
+		.wine-bottle-ribbon-content:after{
+			content: "";
+			position: absolute;
+			display: block;
+			height: 0;
+			width: 0;
+			top:47px;
+			right:0;
+			border-width: 12px 17px;
+			border-style: solid;
+			border-color: #8C001A transparent transparent #8C001A;
+			z-index: -1;
+		}
+	</style>
+</head>
+<body>
+<div class="wine-bottle">
+	<img src="images/winebottle.png">
+	<div class="wine-bottle-ribbon">
+		<div class="wine-bottle-ribbon-content">
+			<h2>Wine bottle</h2>
+		</div>
+	</div>
+</div>
+</body>
+</html>
